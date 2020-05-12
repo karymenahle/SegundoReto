@@ -57,14 +57,14 @@ BEGIN
 
 stimulus : process 
 
-      file fin : TEXT open READ_MODE is "input.txt";
+      file fin : TEXT open READ_MODE is "in.txt";
       variable current_read_line : line;
       variable current_read_field : string(1 to 4);
       variable current_read_data : std_logic;
       variable current_read_datal : std_logic_vector(7 downto 0);
       variable current_write_line : line;
 
-      file fout : TEXT open WRITE_MODE is "OP.txt"; 
+      file fout : TEXT open WRITE_MODE is "out.txt"; 
       variable current_line :line; 
 
       begin 
