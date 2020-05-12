@@ -45,7 +45,7 @@ begin
            end if; 
                     
        when RUN=>
-            if(clk_count <= 5) then --wait on for 5 clk periods
+            if(clk_count <= 5) then
               clk_count := clk_count + 1;
               SIGNAL_EN <= '1';
               present <= RUN;
